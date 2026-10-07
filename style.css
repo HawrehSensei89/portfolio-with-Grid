@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    border: 5px solid #6a040f;
+    display: grid;
+    /* در خط بعدی به گرید میگیم چند تا ستون میخوایم */
+    grid-template-columns: 200px 300px 200px;
+   /* در اینجا گفتم سه ستون باشه یکی 200 پیکسل یکی 300 پیکسل و اخری 200 پیکسل */
+
+   /* در خط بعدی میگیم عرض هر ستون چند پیکسل باشه */
+
+   grid-template-rows: 200px 300px;
+   /* در اینجا گفتیم عرض اولی 200پیکسل باشه عرض دومی 300پیکسل باشه و سومی خودکار باشه */
+}
+
+.box {
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+.box-1 {
+    background: #ef476f;
+}
+
+.box-2 {
+    background: yellow;
+}
+
+.box-3 {
+    background: green;
+}
+
+.box-4 {
+    background: blue;
+}
+
+.box-5 {
+    background: #131835;
+}
+
+.box-6 {
+    background: orange;
+}
