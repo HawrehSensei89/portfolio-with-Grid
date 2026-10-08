@@ -8,13 +8,13 @@
     border: 5px solid #6a040f;
     display: grid;
 
-    /* * === === === align-self & justify-self === === === */
+    /* * === === === minmax() === === === */
 
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: 1fr minmax(300px , 1fr) 1fr;
 
-
-    place-items: center;
-
+    /* * ستون دوم از 300پیکسل کوچیکتر نشه و از 1fr هم بزرگتر نشه */
+    grid-template-rows: 1fr minmax(300px , 1fr);
+    /* * نمیزاره سطر دوم از 300پیکسل کوچیکتر بشه */
 }
 
 .box {
@@ -30,14 +30,6 @@
 
 .box-2 {
     background: yellow;
-    justify-self: start;
-    /* * میچسبه به اول لاین هودش از لحاظ افقی */
-
-    align-self: end;
-    /* * میچسبه به اخر لاین خودش از لحاظ عمودی */
-
-    /* === short hands : === */
-    place-self: center end;
 }
 
 .box-3 {
