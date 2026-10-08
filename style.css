@@ -8,21 +8,17 @@
     border: 5px solid #6a040f;
     display: grid;
 
-    /* * === === === align-content & justify-content === === === */
+    /* * === === === align-items & justify-items === === === */
 
     grid-template-columns: repeat(3, 200px);
-    /* grid-template-rows: repeat(2 , 200px); */
-    /* justify-content: end; */
-    /** دقیقا مثل فلکس باکس */
-    /** فاصله بین ستون ها */
-    align-content: space-between;
-    /* * مثل فلکسباکس */
-    /** فاصله از لحاظ عمودی بین سطر ها  */
+    /* justify-items: end; */
+    /* * هرکدوم از ایتم ها بچسبن به انتهای لاینشون از لحاظ افقی */
 
-    /* === shorthands : ===*/
+    /* align-items: end; */
+    /** هرکدوم از ایتم ها میچسبن به انتهای لاینشون ازلحاظ عمودی */
 
-    place-content: center center;
-    /** place-content  ==> align-content justify-content */
+    /* === shorthand : === */
+    place-items: center end;
 }
 
 .box {
