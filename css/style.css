@@ -118,9 +118,9 @@ p {
 
 .nav__header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    
+
     .nav__btn {
         justify-self: end;
         background: transparent;
@@ -143,4 +143,37 @@ p {
 
 .nav__links {
     display: none;
+}
+
+
+/** navbar in bigger size */
+
+@media screen and (min-width: 768px) {
+
+    .nav__btn {
+        display: none;
+    }
+
+    .nav__links {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-self: end;
+        column-gap: 2rem;
+        justify-items: center;
+    }
+
+    .nav__links a {
+        color: var(--clr-gray-1);
+        transition: var(--transition);
+
+        &:hover {
+            color: var(--clr-primary-4);
+        }
+    }
+
+    .nav__center {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+    }
 }
