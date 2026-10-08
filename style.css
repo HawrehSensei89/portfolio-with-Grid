@@ -4,15 +4,25 @@
 
 
 .container {
+    min-height: 100vh;
     border: 5px solid #6a040f;
     display: grid;
 
-    /* * === === === repeat() & order:; === === === */
+    /* * === === === align-content & justify-content === === === */
 
-    grid-template-columns: repeat(2, 1fr) 2fr;
-    /** دوتا ستون یکی 1fr و دومی 2fr */
-    grid-template-rows: repeat(2 , 200px);
-    /** دوتا سطر 200پیکسل */
+    grid-template-columns: repeat(3, 200px);
+    /* grid-template-rows: repeat(2 , 200px); */
+    /* justify-content: end; */
+    /** دقیقا مثل فلکس باکس */
+    /** فاصله بین ستون ها */
+    align-content: space-between;
+    /* * مثل فلکسباکس */
+    /** فاصله از لحاظ عمودی بین سطر ها  */
+
+    /* === shorthands : ===*/
+
+    place-content: center center;
+    /** place-content  ==> align-content justify-content */
 }
 
 .box {
@@ -25,7 +35,6 @@
 .box-1 {
     background: #ef476f;
     order: 1;
-    /** این باکس از همه ی باکس های که اوردرشون کوچیکتر هست جلوتر قرار میگیره */
 }
 
 .box-2 {
