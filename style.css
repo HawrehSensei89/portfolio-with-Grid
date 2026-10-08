@@ -4,21 +4,17 @@
 
 
 .container {
-    min-height: 100vh;
+    min-height: 90vh;
     border: 5px solid #6a040f;
     display: grid;
 
-    /* * === === === align-items & justify-items === === === */
+    /* * === === === align-self & justify-self === === === */
 
     grid-template-columns: repeat(3, 200px);
-    /* justify-items: end; */
-    /* * هرکدوم از ایتم ها بچسبن به انتهای لاینشون از لحاظ افقی */
 
-    /* align-items: end; */
-    /** هرکدوم از ایتم ها میچسبن به انتهای لاینشون ازلحاظ عمودی */
 
-    /* === shorthand : === */
-    place-items: center end;
+    place-items: center;
+
 }
 
 .box {
@@ -30,11 +26,18 @@
 
 .box-1 {
     background: #ef476f;
-    order: 1;
 }
 
 .box-2 {
     background: yellow;
+    justify-self: start;
+    /* * میچسبه به اول لاین هودش از لحاظ افقی */
+
+    align-self: end;
+    /* * میچسبه به اخر لاین خودش از لحاظ عمودی */
+
+    /* === short hands : === */
+    place-self: center end;
 }
 
 .box-3 {
