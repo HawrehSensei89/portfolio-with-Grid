@@ -8,16 +8,15 @@
     border: 5px solid #6a040f;
     display: grid;
 
-    /* * === === === minmax() === === === */
+    /* * === === === auto-fit & auto-fill === === === */
 
-    grid-template-columns: 1fr minmax(300px , 1fr) 1fr;
-
-    /* * ستون دوم از 300پیکسل کوچیکتر نشه و از 1fr هم بزرگتر نشه */
-    grid-template-rows: 1fr minmax(300px , 1fr);
-    /* * نمیزاره سطر دوم از 300پیکسل کوچیکتر بشه */
+    /* grid-template-columns: repeat(auto-fill, 200px); */
+    /* * جا نباشه میره به خطبعدی و دیگه نیازی به گرید تمپلیت روز نیست */
+    grid-template-columns: repeat(auto-fit , minmax(300px , 1fr));
+    /* * همون کار اوتو فیل رو میکنه اما جاهای خالی رو درنظر نمیگیره */
 }
 
-.box {
+.box{
     padding: 30px;
     text-align: center;
     font-size: 35px;
