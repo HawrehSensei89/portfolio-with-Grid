@@ -1,0 +1,146 @@
+/** ============================= Fonts ================================ **/
+
+@font-face {
+    font-family: "vazir";
+    src: url("../assets/fonts/vazir/Vazir-Medium-FD-WOL.woff") format("woff2"),
+        url("../assets/fonts/vazir/Vazir-Medium-FD-WOL.woff") format("woff"),
+        url("../assets/fonts/vazir/Vazir-Medium-FD-WOL.ttf") format("TrueType");
+}
+
+
+/** variebles :  */
+
+:root {
+    --clr-primary-1: #2f3e46;
+    --clr-primary-2: #354f52;
+    --clr-primary-3: #52796f;
+    --clr-primary-4: #84a98c;
+    --clr-primary-5: #cad2c5;
+    --clr-gray-1: #102a42;
+    --clr-gray-2: #617d98;
+    --clr-gray-3: rbg(241, 245, 248);
+    --clr-white: #fff;
+    --ff-primary: "vazir", sans-serif;
+    --transition: all 0.3s linear;
+    --reduis: 0.5rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --max-width: 1170px;
+}
+
+
+/** ========================== Global Styles ============================= */
+
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-primary);
+    background: var(--clr-white);
+    color: var(--clr-gray-1);
+    line-height: 1.5;
+    font-size: 0.875rem;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+    font-family: var(--ff-primary);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 0.875rem;
+}
+
+p {
+    margin-bottom: 1.25rem;
+    color: var(--clr-gray-2);
+}
+
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+}
+
+/** ============================ nabar styles =============================== */
+.nav {
+    background: var(--clr-primary-5);
+    height: 4.5rem;
+    padding: 1rem;
+}
+
+.nav__header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    
+    .nav__btn {
+        justify-self: end;
+        background: transparent;
+        border-color: transparent;
+        color: var(--clr-primary-2);
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+}
+
+.nav__center {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.nav__links {
+    display: none;
+}
