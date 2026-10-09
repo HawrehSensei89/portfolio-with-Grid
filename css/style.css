@@ -144,6 +144,7 @@ p {
     background: var(--clr-primary-5);
     height: 4.5rem;
     padding: 1rem;
+    z-index: 3;
 }
 
 .nav__header {
@@ -311,6 +312,16 @@ p {
     /** // calc( height of the hero__center - height of the nav ) */
 }
 
+.section {
+    padding: 4rem;
+}
+
+.section__center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: var(--max-width);
+}
+
 @media screen and (min-width: 992px) {
     .hero__section-center {
         width: 95vw;
@@ -334,6 +345,7 @@ p {
 .hero__social-icons {
     justify-items: start;
 }
+
 .hero__image {
     display: none;
 }
@@ -373,3 +385,22 @@ p {
         position: relative;
     }
 }
+
+
+/** ============================== About Styling ================================= */
+
+.section {}
+
+.section__center {}
+
+.about__center {}
+
+.section__about-img {}
+
+.section__about-info {}
+
+.section__about-title {}
+
+.underline {}
+
+.btn {}
