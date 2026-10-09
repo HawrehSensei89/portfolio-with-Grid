@@ -45,6 +45,7 @@ body {
     color: var(--clr-gray-1);
     line-height: 1.5;
     font-size: 0.875rem;
+    overflow-x: hidden;
 }
 
 
@@ -131,7 +132,7 @@ p {
 }
 
 .section {
-    padding: 4rem;
+    padding: 4rem 0;
 }
 
 .section__center {
