@@ -121,6 +121,25 @@ p {
     margin-right: auto;
 }
 
+.bg-grey {
+    background: var(--clr-gray-3);
+}
+
+.section__title {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.section {
+    padding: 4rem;
+}
+
+.section__center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: var(--max-width);
+}
+
 @media screen and (min-width: 800px) {
     h1 {
         font-size: 4rem;
@@ -312,15 +331,7 @@ p {
     /** // calc( height of the hero__center - height of the nav ) */
 }
 
-.section {
-    padding: 4rem;
-}
 
-.section__center {
-    width: 90vw;
-    margin: 0 auto;
-    max-width: var(--max-width);
-}
 
 @media screen and (min-width: 992px) {
     .hero__section-center {
@@ -428,6 +439,7 @@ p {
     .about__img {
         position: relative;
     }
+
     .about__img {
         display: block;
         position: relative;
@@ -443,5 +455,57 @@ p {
             right: -2rem;
 
         }
+    }
+}
+
+
+/** ============================= Services Styling ================================ **/
+
+
+.services__service {
+    background: var(--clr-white);
+    padding: 3rem 1.5rem;
+    border-radius: var(--reduis);
+    text-align: center;
+    margin-bottom: 2rem;
+    transition: var(--transition);
+
+    .underline {
+        width: 3rem;
+        height: 0.12rem;
+        transition: var(--transition);
+    }
+
+    p {
+        transition: var(--transition);
+    }
+
+    &:hover {
+        background: var(--clr-primary-2);
+        color: var(--clr-white);
+
+        p {
+            color: var(--clr-white);
+        }
+
+
+    }
+}
+
+.services__service:hover .underline {
+    background: var(--clr-white);
+}
+
+@media screen and (min-width: 676px) {
+    .services__center {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .services__center {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
