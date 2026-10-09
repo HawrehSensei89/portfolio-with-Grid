@@ -510,3 +510,59 @@ p {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+
+
+/** ============================= Projects Styling ================================ **/
+
+.projects {}
+
+.underline {}
+
+
+
+.projects__text {
+    width: 85vw;
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+.projects__project {
+    position: relative;
+    background: var(--clr-primary-2);
+    margin-bottom: 2rem;
+    border-radius: var(--reduis);
+
+
+    &:hover .project__info {
+        opacity: 1;
+    }
+
+    &:hover .project__img {
+        opacity: 0.1;
+    }
+
+}
+
+
+.projects__center {}
+
+.project__img {
+    transition: var(--transition);
+    border-radius: var(--reduis);
+    height: 15rem;
+    object-fit: cover;
+}
+
+.project__info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: var(--clr-white);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: var(--transition);
+
+    p {
+        color: var(--clr-white);
+    }
+}
