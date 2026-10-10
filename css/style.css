@@ -685,3 +685,85 @@ p {
 .connect__text {
     max-width: 30rem;
 }
+
+
+/** ============================= Skills Styles ================================ */
+
+.skills {
+    background: var(--clr-primary-4);
+
+    h3 {
+        color: var(--clr-primary-1);
+        margin: 1.5rem 0;
+    }
+
+}
+
+.skill {
+    margin-bottom: 1.5rem;
+
+    p {
+        margin: 0.5rem 0;
+        color: var(--clr-primary-1);
+    }
+}
+
+.skill__container {
+    position: relative;
+    background: var(--clr-white);
+    height: 1rem;
+    width: 100%;
+    border-radius: var(--reduis);
+}
+
+.skill__value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--clr-primary-2);
+    height: 100%;
+    border-radius: var(--reduis);
+}
+
+.skill__value-50 {
+    width: 50%;
+}
+
+.skill__value-70 {
+    width: 70%;
+}
+
+.skill__value-80 {
+    width: 80%;
+}
+
+.skill__text {
+    position: absolute;
+    top: -2rem;
+
+}
+
+
+.skill__text-50 {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.skill__text-70 {
+    left: 70%;
+    transform: translateX(-70%);
+}
+
+.skill__text-80 {
+    left: 80%;
+    transform: translateX(-80%);
+}
+
+
+@media screen and (min-width: 768px){
+    .skills__center {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }    
+}
