@@ -210,7 +210,7 @@ p {
         grid-template-columns: repeat(4, 1fr);
         justify-self: end;
         -moz-column-gap: 2rem;
-             column-gap: 2rem;
+        column-gap: 2rem;
         justify-items: center;
     }
 
@@ -297,7 +297,7 @@ p {
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     -moz-column-gap: 3rem;
-         column-gap: 3rem;
+    column-gap: 3rem;
     margin-top: 2rem;
 
     .social-icon {
@@ -395,7 +395,7 @@ p {
         max-width: 25rem;
         max-height: 30rem;
         -o-object-fit: cover;
-           object-fit: cover;
+        object-fit: cover;
         border-radius: var(--reduis);
         position: relative;
     }
@@ -430,7 +430,7 @@ p {
     max-width: 25rem;
     max-height: 30rem;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     border-radius: var(--reduis);
     position: relative;
 }
@@ -506,7 +506,7 @@ p {
         display: grid;
         grid-template-columns: 1fr 1fr;
         -moz-column-gap: 2rem;
-             column-gap: 2rem;
+        column-gap: 2rem;
     }
 }
 
@@ -565,7 +565,7 @@ p {
     border-radius: var(--reduis);
     height: 15rem;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
 }
 
 .project__info {
@@ -587,7 +587,7 @@ p {
         display: grid;
         grid-template-columns: 1fr 1fr;
         -moz-column-gap: 2rem;
-             column-gap: 2rem;
+        column-gap: 2rem;
     }
 }
 
@@ -678,7 +678,7 @@ p {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     z-index: -1;
 }
 
@@ -773,7 +773,7 @@ p {
         display: grid;
         grid-template-columns: 1fr 1fr;
         -moz-column-gap: 2rem;
-             column-gap: 2rem;
+        column-gap: 2rem;
     }
 }
 
@@ -875,7 +875,7 @@ p {
 .card__side {
     position: absolute;
     -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+    backface-visibility: hidden;
     left: 0;
     top: 0;
     width: 100%;
@@ -890,7 +890,7 @@ p {
     img {
         height: 13rem;
         -o-object-fit: cover;
-           object-fit: cover;
+        object-fit: cover;
         border-top-left-radius: var(--reduis);
         border-top-right-radius: var(--reduis);
     }
